@@ -54,5 +54,6 @@ package "ECサイト" as target_system {
     }
     
     customer |o-ri-o{ purchase
+    purchase ||-|{ purchase_detail
 @enduml
 ```
