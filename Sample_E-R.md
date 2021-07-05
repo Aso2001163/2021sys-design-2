@@ -52,5 +52,7 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
+    
+    顧客マスタ |-r-o-o-{ 購入テーブル
 @enduml
 ```
