@@ -19,7 +19,7 @@ package "ECサイト" as target_system {
         mail
         del_flag
         reg_date
-    }
+    }|-r-o-o-{
     entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         --
@@ -52,7 +52,5 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
-    
-    m_customers |-l-O-O-{ d_purchase
 @enduml
 ```
