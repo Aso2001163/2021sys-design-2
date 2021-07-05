@@ -52,5 +52,7 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
+    
+    customer |-l-O-O-{ purchase
 @enduml
 ```
