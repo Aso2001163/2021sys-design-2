@@ -9,6 +9,10 @@ skinparam class {
     ArrowColor Black
 }
 package "ECサイト" as target_system {
+    customer |-l-o-o{ purchase
+    purchase ||-l-{ purchase_detail
+    category ||-l-o{ item
+    item ||-u-{ purchase_detail
     entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
         --
@@ -56,10 +60,5 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
-    
-    customer |-l-o-o{ purchase
-    purchase ||-l-{ purchase_detail
-    category ||-l-o{ item
-    item ||-u-{ purchase_detail
 @enduml
 ```
