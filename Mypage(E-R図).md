@@ -51,7 +51,7 @@ package "ECサイト" as target_system {
         del_flag
         reg_date
     }
-    entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+    entity "カテゴリマスタ" as category<<M,MASTER_MARK_COLOR>> {
         + category_id [PK]
         --
         name
