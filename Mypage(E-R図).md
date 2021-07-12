@@ -34,7 +34,14 @@ package "ECサイト" as target_system {
         num
     }
     entity "商品マスタ" as item<<M,MASTER_MARK_COLOR>> {
-        + item_code [PK]
+        + item_id [PK]
+        --
+        item_name
+        image
+    }
+    entity "商品詳細マスタ" as item_detail<<M,MASTER_MARK_COLOR>> {
+        + item_id [PK]
+        + itemdetail_id
         --
         item_name
         price
@@ -43,8 +50,10 @@ package "ECサイト" as target_system {
         del_flag
         reg_date
     }
+    
     user |o-ri-o{ purchase
     purchase ||-|{ purchase_detail
     purchase_detail }-do-|| item
+    item_detail ||-ri-o{ item
 @enduml
 ```
