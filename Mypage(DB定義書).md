@@ -7,7 +7,7 @@
 |和名|属性名|型|PK|NN|FK|
 |----|-----|--|--|--|--|
 |オーダーID|order_id|bigint(20)|○|○||
-|ユーザーID|user_id|varchar(50)||○||
+|ユーザーID|user_id|varchar(50)||○|○|
 |購入日|purchase_date|date||○||
 |総額|total_price|int(11)||○||
 
