@@ -9,13 +9,11 @@ skinparam class {
     ArrowColor Black
 }
 package "ECサイト" as target_system {
-    entity "顧客マスタ" as customer<<M,MASTER_MARK_COLOR>> {
-        + customer_code [PK]
+    entity "顧客マスタ" as user<<M,MASTER_MARK_COLOR>> {
+        + user_id [PK]
         --
           pass
           name
-          address
-          tel
           mail
           del_flag
           reg_date
@@ -23,7 +21,7 @@ package "ECサイト" as target_system {
     entity "購入テーブル" as purchase<<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         --
-        customer_code [FK]
+        user_id [FK]
         purchase_date
         total_price
     }
@@ -53,7 +51,7 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    customer |o-ri-o{ purchase
+    user |o-ri-o{ purchase
     purchase ||-|{ purchase_detail
     purchase_detail }-do-|| item
     category ||-ri-o{ item
