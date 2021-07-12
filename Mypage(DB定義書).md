@@ -33,10 +33,19 @@
 ### 商品テーブル
 |和名|属性名|型|PK|NN|FK|
 |----|-----|--|--|--|--|
-|商品コード|item_code|int(11)|○|○||
+|商品ID|item_id|int(11)|○|○||
+|商品名|item_name|varchar(50)||○||
+|画像ファイル名|image|varchar(200)||○||
+
+### 商品詳細テーブル
+|和名|属性名|型|PK|NN|FK|
+|----|-----|--|--|--|--|
+|商品ID|item_id|int(11)|○|○||
+|商品詳細ID|itemdetail_id|int(11)|○|○||
 |商品名|item_name|varchar(50)||○||
 |価格|price|int(11)||○||
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細説明|detail|varchar(500)||||
 |削除フラグ|del_flag|int(11)||||
 |登録日|reg_date|date||○||
+
