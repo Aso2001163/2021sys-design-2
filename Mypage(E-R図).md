@@ -36,12 +36,12 @@ package "ECサイト" as target_system {
     entity "商品マスタ" as item<<M,MASTER_MARK_COLOR>> {
         + item_id [PK]
         --
+        itemdetail_id [FK]
         item_name
         image
     }
     entity "商品詳細マスタ" as item_detail<<M,MASTER_MARK_COLOR>> {
-        + item_id [PK]
-        + itemdetail_id
+        + itemdetail_id [PK]
         --
         item_name
         price
