@@ -24,7 +24,7 @@
 |和名|属性名|型|PK|NN|FK|
 |----|-----|--|--|--|--|
 |ユーザーID|user_id|varchar(50)|○|○||
-|パスワード|pass|varchar(50)|○|○||
+|パスワード|pass|varchar(50)|○|○|○|
 |氏名|name|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |削除フラグ|del_flag|int(1)||||
