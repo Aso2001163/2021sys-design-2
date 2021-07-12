@@ -42,6 +42,7 @@
 |----|-----|--|--|--|--|
 |商品ID|item_id|int(11)|○|○||
 |商品詳細ID|itemdetail_id|int(11)|○|○||
+|カテゴリーID|category_id|int(11)||○|○|
 |商品名|item_name|varchar(50)||○||
 |価格|price|int(11)||○||
 |画像ファイル名|image|varchar(200)||○||
@@ -49,3 +50,9 @@
 |削除フラグ|del_flag|int(11)||||
 |登録日|reg_date|date||○||
 
+### カテゴリテーブル
+|和名|属性名|型|PK|NN|FK|
+|----|-----|--|--|--|--|
+|カテゴリID|category_id|int(11)|○|○||
+|氏名|name|varchar(20)||○||
+|登録日|reg_date|date||○||
