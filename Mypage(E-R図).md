@@ -38,22 +38,13 @@ package "ECサイト" as target_system {
         --
         item_name
         price
-        category_id [FK]
         image
         detail
         del_flag
         reg_date
     }
-    entity "カテゴリマスタ" as category<<M,MASTER_MARK_COLOR>> {
-        + category_id [PK]
-        --
-        name
-        reg_date
-    }
-    
     user |o-ri-o{ purchase
     purchase ||-|{ purchase_detail
     purchase_detail }-do-|| item
-    category ||-ri-o{ item
 @enduml
 ```
