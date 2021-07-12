@@ -43,8 +43,8 @@ package "ECサイト" as target_system {
         + item_id [PK]
         + itemdetail_id [PK]
         --
-        item_name
         category_id [FK]
+        item_name
         price
         image
         detail
