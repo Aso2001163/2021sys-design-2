@@ -28,9 +28,9 @@
 ## 履歴テーブル(d_history)
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|顧客コード|_id|bigint(20)|○|○|○|
+|顧客コード|customer_id|bigint(20)|○|○|○|
 |オーダーID|order_id|bigint(20) |○|○|○|
-|商品コード|item_code|int(11)||○||
+|商品コード|item_code|int(11)||○|○|
 |価格|price|int(11)||○||
 |数量|num|int(11)||○||
 
