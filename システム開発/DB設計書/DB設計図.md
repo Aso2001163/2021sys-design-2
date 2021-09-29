@@ -27,8 +27,7 @@
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
 |address|varchar(100)||○||
-|tel|varchar(20)||○||
-|mail|varchar(100)||○||
+|credit|varchar(20)||○||
 |del_flag|int(1)||||
 |reg_date|date||○||
 
