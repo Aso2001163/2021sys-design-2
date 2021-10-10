@@ -1,6 +1,7 @@
 # データベース設計図
 
 ## d_purchase
+
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |order_id|bigint(20)|○|○||
@@ -9,6 +10,7 @@
 |total_price|int(11)||○||
 
 ## d_purchase_detail
+
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |detail_id|bigint(20)|○|○||
@@ -18,6 +20,7 @@
 |num|int(11)||○||
 
 ## m_customers
+
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |customer_code|varchar(50)|○|○||
@@ -29,6 +32,7 @@
 |reg_date|date||○||
 
 ## m_category
+
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |category_id|int(11)|○|○||
@@ -36,6 +40,7 @@
 |reg_date|date||○||
 
 ## m_items
+
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |item_code|int(11)|○|○||
