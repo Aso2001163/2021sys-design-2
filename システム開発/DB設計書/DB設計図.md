@@ -19,6 +19,28 @@
 |price|int(11)||○||
 |num|int(11)||○||
 
+## d_favorite
+
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|customer_code|varchar(50)|○|○|○|
+|item_code|int(11)|○|○|○|
+|item_name|varchar(50)||○||
+|image|varchar(200)||○||
+|detail|varchar(500)||||
+|price|int(11)||○||
+
+## d_cart
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|customer_code|varchar(50)|○|○|○|
+|item_code|int(11)|○|○|○|
+|item_name|varchar(50)||○||
+|image|varchar(200)||○||
+|detail|varchar(500)||||
+|price|int(11)||○||
+|num|int(11)||○||
+
 ## m_customers
 
 |項目名|型|PK|NN|FK|
@@ -27,6 +49,7 @@
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
 |address|varchar(100)||○||
+|mail_address|varchar(100)||○||
 |credit|varchar(50)||○||
 |del_flag|int(1)||||
 |reg_date|date||○||
@@ -51,3 +74,11 @@
 |detail|varchar(500)||||
 |del_flag|int(11)||||
 |reg_date|date||○||
+
+## m_master
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|master_code|int(11)|○|○||
+|pass|varchar(50)||○||
+|name|varchar(20)||○||
+|master_flag|int(1)||||
