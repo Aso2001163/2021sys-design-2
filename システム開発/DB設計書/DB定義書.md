@@ -55,5 +55,13 @@
 |カテゴリID|category_id|int(11)||○|○|
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細|detail|varchar(500)||||
-|削除フラグ|del_flag|int(11)||||
+|削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
+
+## 管理者マスタ(m_master)
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|管理者番号|master_code|int(11)|○|○||
+|パスワード|pass|varchar(50)||○||
+|氏名|name|varchar(20)||○||
+|管理者フラグ|master_flag|int(1)||||
