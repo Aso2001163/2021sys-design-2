@@ -87,3 +87,4 @@
 |パスワード|pass|varchar(50)||○||
 |氏名|name|varchar(20)||○||
 |管理者フラグ|master_flag|int(1)||||
+
