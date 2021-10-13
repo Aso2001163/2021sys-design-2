@@ -25,6 +25,27 @@
 |価格|price|int(11)||○||
 |数量|num|int(11)||○||
 
+## お気に入りテーブル(d_favorite)
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|顧客番号|customer_code|varchar(50)|○|○|○|
+|商品番号|item_code|int(11)|○|○|○|
+|商品名|item_name|varchar(50)||○||
+|画像ファイル|image|varchar(200)||○||
+|商品詳細|detail|varchar(500)||||
+|価格|price|int(11)||○||
+
+## カートテーブル(d_cart)
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|顧客番号|customer_code|varchar(50)|○|○|○|
+|商品番号|item_code|int(11)|○|○|○|
+|商品名|item_name|varchar(50)||○||
+|画像ファイル|image|varchar(200)||○||
+|商品詳細|detail|varchar(500)||||
+|価格|price|int(11)||○||
+|数量|num|int(11)||○||
+
 ## 顧客マスタ(m_customers)
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
