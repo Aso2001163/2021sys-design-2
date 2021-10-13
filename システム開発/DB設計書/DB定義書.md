@@ -54,6 +54,7 @@
 |パスワード|pass|varchar(50)||○||
 |氏名|name|varchar(20)||○||
 |住所|address|varchar(100)||○||
+|メールアドレス|mail_address|varchar(100)||○||
 |クレジット番号|credit|varchar(50)||○||
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
