@@ -19,6 +19,14 @@
 |price|int(11)||○||
 |num|int(11)||○||
 
+## d_notice
+
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|notice_code|int(11)|○|○||
+|notice_detail|varchar(200)||○||
+|reg_date|date||○||
+
 ## d_favorite
 
 |項目名|型|PK|NN|FK|
