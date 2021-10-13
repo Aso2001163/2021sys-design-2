@@ -33,6 +33,7 @@
 |お知らせ詳細|notice_detail|varchar(200)||○||
 |登録日|reg_date|date||○||
 
+
 ## お気に入りテーブル(d_favorite)
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
