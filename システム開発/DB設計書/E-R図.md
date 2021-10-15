@@ -46,8 +46,8 @@ reg_date
 }
 
 entity "お気に入りテーブル" as d_favorite <d_favorite> <<T,TRANSACTION_MARK_COLOR>> {
-+ customer_code [PK]
-+ item_code [PK]
++ customer_code [PK][FK]
++ item_code [PK][FK]
 --
 item_name
 image
@@ -56,8 +56,8 @@ price
 }
 
 entity "カートテーブル" as d_cart <d_cart> <<T,TRANSACTION_MARK_COLOR>> {
-+ customer_code [PK]
-+ item_code [PK]
++ customer_code [PK][FK]
++ item_code [PK][FK]
 --
 item_name
 image
