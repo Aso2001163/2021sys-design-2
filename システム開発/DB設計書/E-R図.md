@@ -38,8 +38,35 @@ package "ECサイト" as EC_system {
         price
         num
     }
-    
-    entity "商品マスタ" as items <m_items> <<M,MASTER_MARK_COLOR>> {
+entity "お知らせテーブル" as d_notice <d_notice> <<T,TRANSACTION_MARK_COLOR>> {
++ notice_code [PK]
+--
+notice_detail
+reg_date
+}
+
+entity "お気に入りテーブル" as d_favorite <d_favorite> <<T,TRANSACTION_MARK_COLOR>> {
++ customer_code [PK]
++ item_code [PK]
+--
+item_name
+image
+detail
+price
+}
+
+entity "カートテーブル" as d_cart <d_cart> <<T,TRANSACTION_MARK_COLOR>> {
++ customer_code [PK]
++ item_code [PK]
+--
+item_name
+image
+detail
+price
+num
+}
+
+   entity "商品マスタ" as items <m_items> <<M,MASTER_MARK_COLOR>> {
         + item_code [PK]
         --
         item_name
@@ -57,12 +84,24 @@ package "ECサイト" as EC_system {
         name
         reg_date
     }
-  }
-  
-customer       |o-ri-o{     order
-order          ||-ri-|{     order_detail
-order_detail    }-do-||     items
-items          }o-le-||     category
+
+entity "管理者マスタ" as master <m_master> <<M,MASTER_MARK_COLOR>> {
++ master_code [PK]
+--
+pass
+name
+master_flag
+}
+}
+
+   d_favorite }o-|| customer
+   d_favorite }o-|| items
+   d_cart }-|| customer
+   d_cart }-o| items
+   customer       |o-ri-o{     order
+   order          ||-ri-|{     order_detail
+   order_detail    }-do-||     items
+   items          }o-le-||     category
 
 
 @enduml
