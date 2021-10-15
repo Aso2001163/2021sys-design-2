@@ -84,7 +84,6 @@ num
         name
         reg_date
     }
-  }
 
 entity "管理者マスタ" as master <m_master> <<M,MASTER_MARK_COLOR>> {
 + master_code [PK]
@@ -93,11 +92,12 @@ pass
 name
 master_flag
 }
+}
 
    d_favorite }o-|| customer
    d_favorite }o-|| items
    d_cart }-|| customer
-   d_cart }-l-o| items
+   d_cart }-o| items
    customer       |o-ri-o{     order
    order          ||-ri-|{     order_detail
    order_detail    }-do-||     items
