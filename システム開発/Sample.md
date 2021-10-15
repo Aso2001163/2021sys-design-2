@@ -94,10 +94,10 @@ name
 master_flag
 }
 
-   d_favorite }o-|-|| customer
-   d_favorite }o-|-|| items
-   d_cart }-|-|| customer
-   d_cart }-|-o| items
+   d_favorite }o-|| customer
+   d_favorite }o-|| items
+   d_cart }-|| customer
+   d_cart }-o| items
    customer       |o-ri-o{     order
    order          ||-ri-|{     order_detail
    order_detail    }-do-||     items
