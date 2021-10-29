@@ -90,3 +90,13 @@
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
 |master_flag|int(1)||||
+
+## m_image
+|属性名(カラム名)|型|PK|NN|FK|
+|-----|--|--|--|--|
+|image_id|int|○|○||
+|image_name|varchar(255)||○||
+|image_type|varchar(64)||○||
+|image|mediumblob||○||
+|image_size|int||○||
+|create_date|date||○||
