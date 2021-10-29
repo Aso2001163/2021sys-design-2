@@ -97,3 +97,12 @@
 |氏名|name|varchar(20)||○||
 |管理者フラグ|master_flag|int(1)||||
 
+## イメージマスタ(m_image)
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|画像番号|image_id|int|○|○||
+|画像名|image_name|varchar(255)||○||
+|画像タイプ|image_type|varchar(64)||○||
+|画像ファイル|image|mediumblob||○||
+|画像サイズ|image_size|int||○||
+|登録日|create_date|date||○||
