@@ -102,5 +102,5 @@
 |---|-----|--|--|--|--|
 |画像番号|id|int(11)|○|○||
 |ファイル名|file_name|varchar(255)||○||
-|登録日|upload_on|datetime||○||
+|登録日|uploaded_on|datetime||○||
 |ステータス|status|enum||○||
