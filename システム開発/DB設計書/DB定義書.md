@@ -101,8 +101,5 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |画像番号|image_id|int|○|○||
-|画像名|image_name|varchar(255)||○||
-|画像タイプ|image_type|varchar(64)||○||
-|画像ファイル|image|mediumblob||○||
-|画像サイズ|image_size|int||○||
+|画像パス|image_pass|varchar(255)||○||
 |登録日|create_date|date||○||
