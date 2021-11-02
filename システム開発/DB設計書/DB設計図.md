@@ -95,8 +95,5 @@
 |属性名(カラム名)|型|PK|NN|FK|
 |-----|--|--|--|--|
 |image_id|int|○|○||
-|image_name|varchar(255)||○||
-|image_type|varchar(64)||○||
-|image|mediumblob||○||
-|image_size|int||○||
+|image_pass|varchar(255)||○||
 |create_date|date||○||
