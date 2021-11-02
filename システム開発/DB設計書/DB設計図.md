@@ -91,9 +91,10 @@
 |name|varchar(20)||○||
 |master_flag|int(1)||||
 
-## m_image
+## images
 |属性名(カラム名)|型|PK|NN|FK|
 |-----|--|--|--|--|
-|image_id|int|○|○||
-|image_pass|varchar(255)||○||
-|create_date|date||○||
+|id|int(11)|○|○||
+|file_name|varchar(255)||○||
+|uploaded_on|datetime||○||
+|status|enum||○||
