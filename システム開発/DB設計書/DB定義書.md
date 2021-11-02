@@ -97,9 +97,10 @@
 |氏名|name|varchar(20)||○||
 |管理者フラグ|master_flag|int(1)||||
 
-## 画面マスタ(m_image)
+## 画面マスタ(images)
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|画像番号|image_id|int|○|○||
-|画像パス|image_pass|varchar(255)||○||
-|登録日|create_date|date||○||
+|画像番号|id|int(11)|○|○||
+|ファイル名|file_name|varchar(255)||○||
+|登録日|upload_on|datetime||○||
+|ステータス|status|enum||○||
