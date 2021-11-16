@@ -51,7 +51,6 @@
 |商品番号|item_code|int(11)|○|○|○|
 |商品名|item_name|varchar(50)||○||
 |画像ファイル|image|varchar(200)||○||
-|商品詳細|detail|varchar(500)||||
 |価格|price|int(11)||○||
 |数量|num|int(11)||○||
 
