@@ -61,7 +61,6 @@ entity "カートテーブル" as d_cart <d_cart> <<T,TRANSACTION_MARK_COLOR>> {
 --
 item_name
 image
-detail
 price
 num
 }
