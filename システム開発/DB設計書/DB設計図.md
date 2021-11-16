@@ -45,7 +45,6 @@
 |item_code|int(11)|○|○|○|
 |item_name|varchar(50)||○||
 |image|varchar(200)||○||
-|detail|varchar(500)||||
 |price|int(11)||○||
 |num|int(11)||○||
 
