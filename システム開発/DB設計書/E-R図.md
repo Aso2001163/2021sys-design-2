@@ -26,17 +26,11 @@ package "ECサイト" as EC_system {
         + order_id [PK]
         --
         # customer_code [FK]
-        purchase_date
-        total_price
-    }
-    
-    entity "購入詳細テーブル" as order_detail  <order_detail> <<T,TRANSACTION_MARK_COLOR>> {
-        + detail_id[PK]
-        + order_id[PK]
-        --
-        # item_code [FK]
+        item_code
         price
         num
+        purchase_date
+        total_price
     }
 entity "お知らせテーブル" as d_notice <d_notice> <<T,TRANSACTION_MARK_COLOR>> {
 + notice_code [PK]
@@ -98,8 +92,6 @@ master_flag
    d_cart }-|| customer
    d_cart }-o| items
    customer       |o-ri-o{     order
-   order          ||-ri-|{     order_detail
-   order_detail    }-do-||     items
    items          }o-le-||     category
 
 
