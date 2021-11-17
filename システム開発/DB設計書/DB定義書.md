@@ -12,18 +12,11 @@
 |---|-----|--|--|--|--|
 |注文ID|order_id|bigint(20)|○|○||
 |顧客番号|customer_code|varchar(50)||○|○|
-|購入日|purchase_date|date||○||
-|総額|total_price|int(11)||○||
-
-## 購入詳細テーブル(d_purchase_detail)
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|注文詳細ID|detail_id|bigint(20)|○|○||
-|注文ID|order_id|bigint(20) |○|○|○|
 |商品番号|item_code|int(11)||○|○|
 |価格|price|int(11)||○||
 |数量|num|int(11)||○||
+|購入日|purchase_date|date||○||
+|総額|total_price|int(11)||○||
 
 ## お知らせテーブル(d_notice)
 
