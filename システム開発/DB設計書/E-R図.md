@@ -88,7 +88,7 @@ master_flag
 }
 
    d_favorite }o-up-|| customer
-   d_favorite }o-|| items
+   d_favorite }o-ri-|| items
    d_cart }-|| customer
    d_cart }-o| items
    customer       |o--o{     order
