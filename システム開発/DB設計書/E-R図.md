@@ -91,8 +91,8 @@ master_flag
    d_favorite }o-|| items
    d_cart }-|| customer
    d_cart }-o| items
-   customer       |o-ri-o{     order
-   items          }o-le-||     category
+   customer       |o--o{     order
+   items          }o--||     category
 
 
 @enduml
