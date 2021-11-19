@@ -91,7 +91,7 @@ master_flag
    d_favorite }o-ri-|| items
    d_cart }-|| customer
    d_cart }-o| items
-   customer       |o--o{     order
+   customer       |o-ri-o{     order
    items          }o--||     category
 
 
